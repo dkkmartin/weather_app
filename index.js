@@ -2,7 +2,7 @@
 // Location: country, localtime, name
 
 async function getWeatherData (search) {
-  const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=f3ec47f4f1d0499f94e195153230304&q=${search}&aqi=no`, { mode: 'cors' })
+  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=f3ec47f4f1d0499f94e195153230304&q=${search}&aqi=no`, { mode: 'cors' })
   const weatherData = await response.json()
   weatherDataNeeded(weatherData)
 }
